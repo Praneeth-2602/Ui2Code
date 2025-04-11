@@ -1,6 +1,6 @@
 import React from 'react'
 import ProductDetail from '@/app/components/product-detail'
-import img from '@/app/assets/5c2ad696cd5d414abf56bb1038b5100d.png'
+import img from '@/app/assets/mclaren.png'
 
 function page() {
   return (
