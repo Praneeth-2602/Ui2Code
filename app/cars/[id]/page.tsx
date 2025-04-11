@@ -7,7 +7,7 @@ function page() {
 
         {/* Product Description Section */}
       <div className="mx-auto max-w-7xl px-4 py-8 border-t border-zinc-800">
-        <h2 className="text-2xl font-medium mb-6">DESCRIPTION</h2>
+        
 
         <ProductDetail
           name="McLaren 840"
