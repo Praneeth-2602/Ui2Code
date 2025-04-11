@@ -1,8 +1,6 @@
 import Image from "next/image"
 import { Menu, Search } from "lucide-react"
 import Link from "next/link"
-import CarCard from "./components/car-card"
-import ProductDetail from "./components/product-detail"
 import EventCard from "./components/event-card"
 import logo from "./assets/hotwheels-logo.png"
 import ford from "./assets/fordgt840.png"
