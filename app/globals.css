@@ -1,22 +1,29 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 240 10% 3.9%;
+  /* Light theme */
+  --background: 45 100% 97%;           /* #FFFAEA */
+  --foreground: 240 10% 3.9%;          /* Near black for text */
+
+  --primary: 0 0% 18%;                 /* #2E2E2E */
+  --primary-foreground: 45 100% 97%;   /* #FFFAEA */
+
+  --secondary: 257 27% 85%;           /* #D6CFE1 */
+  --secondary-foreground: 0 0% 18%;   /* dark text on lavender */
+
+  --accent: 257 27% 85%;              /* reuse secondary */
+  --accent-foreground: 0 0% 18%;
+
   --card: 0 0% 100%;
   --card-foreground: 240 10% 3.9%;
   --popover: 0 0% 100%;
   --popover-foreground: 240 10% 3.9%;
-  --primary: 262.1 83.3% 57.8%;
-  --primary-foreground: 210 20% 98%;
-  --secondary: 240 4.8% 95.9%;
-  --secondary-foreground: 240 5.9% 10%;
+
   --muted: 240 4.8% 95.9%;
   --muted-foreground: 240 3.8% 46.1%;
-  --accent: 240 4.8% 95.9%;
-  --accent-foreground: 240 5.9% 10%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
+
   --border: 240 5.9% 90%;
   --input: 240 5.9% 90%;
   --ring: 262.1 83.3% 57.8%;
@@ -24,27 +31,34 @@
 }
 
 .dark {
-  --background: 240 10% 3.9%;
-  --foreground: 0 0% 98%;
-  --card: 240 10% 3.9%;
-  --card-foreground: 0 0% 98%;
-  --popover: 240 10% 3.9%;
-  --popover-foreground: 0 0% 98%;
-  --primary: 262.1 83.3% 57.8%;
-  --primary-foreground: 210 20% 98%;
-  --secondary: 240 3.7% 15.9%;
-  --secondary-foreground: 0 0% 98%;
+  --background: 0 0% 18%;               /* #2E2E2E */
+  --foreground: 257 27% 85%;            /* #D6CFE1 */
+
+  --primary: 257 27% 85%;               /* #D6CFE1 */
+  --primary-foreground: 0 0% 18%;       /* #2E2E2E */
+
+  --secondary: 45 100% 97%;             /* #FFFAEA */
+  --secondary-foreground: 0 0% 18%;
+
+  --accent: 45 100% 97%;
+  --accent-foreground: 0 0% 18%;
+
+  --card: 0 0% 18%;
+  --card-foreground: 257 27% 85%;
+  --popover: 0 0% 18%;
+  --popover-foreground: 257 27% 85%;
+
   --muted: 240 3.7% 15.9%;
   --muted-foreground: 240 5% 64.9%;
-  --accent: 240 3.7% 15.9%;
-  --accent-foreground: 0 0% 98%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
-  --border: 240 3.7% 15.9%;
-  --input: 240 3.7% 15.9%;
+
+  --border: 0 0% 30%;
+  --input: 0 0% 30%;
   --ring: 262.1 83.3% 57.8%;
 }
 
 body {
-  @apply bg-[background] text-[foreground];
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
 }
