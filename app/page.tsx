@@ -21,8 +21,8 @@ export default function Home() {
           {/* Left: Logo + Menu */}
           <div className="flex items-center gap-10">
 
-            <nav className="hidden md:flex items-center gap-8 text-base text-black/80 font-medium">
-              <Link href="/" className="hover:text-white transition-colors">Home</Link>
+            <nav className="hidden md:flex items-center gap-8 text-base text-black/80 font-medium px-4">
+              <Link href="/" className="hover:text-secondary transition-colors">Home</Link>
               <Link href="/accessories" className="hover:text-white transition-colors">Accessories</Link>
               <Link href="/cars" className="hover:text-white transition-colors">Cars</Link>
               <Link href="/contact" className="hover:text-white transition-colors">Contact us</Link>
