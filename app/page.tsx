@@ -9,18 +9,7 @@ import EventCard from "./components/event-card"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-zinc-900 text-white">
-      {/* Navigation */}
-      <header className="p-4">
-        <div className="mx-auto max-w-7xl">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="text-xl font-bold">
-              home
-            </Link>
-          </div>
-        </div>
-      </header>
-
+    <div className="min-h-screen bg-zinc-900 text-white">      
       {/* Main Navigation */}
       <div className="mx-auto max-w-7xl px-4 py-2">
         <div className="flex items-center justify-between rounded-full bg-purple-100/20 p-2 px-4">
