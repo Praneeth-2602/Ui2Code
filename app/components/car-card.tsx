@@ -9,16 +9,32 @@ interface CarCardProps {
 
 export default function CarCard({ name, price, imageSrc }: CarCardProps) {
   return (
-    <div className="rounded-lg bg-zinc-700/50 p-4 transition-transform hover:scale-[1.02]">
-      <div className="relative h-40 w-full overflow-hidden rounded-md">
-        <Image src={imageSrc || "/placeholder.svg"} alt={name} fill className="object-cover" />
+    <div className="flex flex-col justify-between h-full rounded-3xl bg-gradient-to-b from-[#D6CFE1] to-[#75717B] p-4 text-black shadow-xl transition-transform hover:scale-[1.02]"
+      style={{
+        boxShadow: "20px 20px 0px rgba(73,70,78,0.80)",
+        filter: "blur(0px)",
+      }}
+    >
+
+      {/* Top: Name and Price */}
+      <div className="flex items-center justify-between mb-4">
+        <h3 className="text-2xl font-medium">{name}</h3>
+        <span className="text-xl font-bold">${price}</span>
       </div>
-      <div className="mt-3 flex items-center justify-between">
-        <h3 className="text-lg font-medium">{name}</h3>
-        <span className="font-bold">${price}</span>
+
+      {/* Middle: Image */}
+      <div className="relative flex-1 h-40 w-full mb-4 overflow-hidden rounded-xl">
+        <Image
+          src={imageSrc || "/placeholder.svg"}
+          alt={name}
+          fill
+          className="object-contain"
+        />
       </div>
-      <div className="mt-3 flex justify-end">
-        <button className="flex items-center gap-2 rounded-md bg-zinc-600 px-3 py-1 text-sm hover:bg-zinc-500">
+
+      {/* Bottom: Button */}
+      <div className="flex justify-end">
+        <button className="flex items-center gap-2 rounded-md bg-black px-4 py-2 text-sm text-white hover:bg-zinc-800">
           Buy Now
           <ShoppingCart className="h-4 w-4" />
         </button>
