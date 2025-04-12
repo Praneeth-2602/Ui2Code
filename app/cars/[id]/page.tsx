@@ -1,14 +1,22 @@
+import { Metadata } from 'next';
 import ProductDetail from '@/app/components/product-detail';
 import img from '@/app/assets/mclaren.png';
 import img2 from '@/app/assets/veloc.png';
 import img3 from '@/app/assets/swamp.png';
 import img4 from '@/app/assets/trice.png';
 
+// Define props type
+interface ProductPageProps {
+  params: {
+    id: string;
+  };
+}
+
 const products = [
   {
     id: "1",
     name: `McLaren 840`,
-    description: "High-quality Hot Wheels & Matchbox car clipart – perfect for party invites, kids crafts, and custom designs!",
+    description: "High-quality Hot Wheels & Matchbox car clipart - perfect for party invites, kids crafts, and custom designs!",
     price: 50,
     imageSrc: img.src
   },
@@ -35,8 +43,8 @@ const products = [
   }
 ];
 
-export default async function ProductPage({ params }: { params: { id: string } }) {
-  const product = products.find(p => p.id === params.id) || products[0];
+export default async function ProductPage({ params }: ProductPageProps) {
+  const product = products.find(p => p.id === params.id);
 
   if (!product) {
     return <div className="text-center text-white mt-20">Product not found!</div>;
