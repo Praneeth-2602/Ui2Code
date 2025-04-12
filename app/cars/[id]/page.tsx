@@ -4,6 +4,7 @@ import img from '@/app/assets/mclaren.png'
 import img2 from '@/app/assets/veloc.png'
 import img3 from '@/app/assets/swamp.png'
 import img4 from '@/app/assets/trice.png'
+import { useParams } from 'next/navigation'
 
 interface ProductPageProps {
   params: {
@@ -11,8 +12,8 @@ interface ProductPageProps {
   }
 }
 
-function ProductPage({ params }: ProductPageProps) {
-  const { id } = params;
+function ProductPage() {
+  const { id } = useParams();
 
   // Ideally: fetch product details using `id` from database
   // For now, using static data
