@@ -1,6 +1,6 @@
 ## Details for Judgement
 - Team Name: NullS3ntin3l5
-- Design Alloted: TooCoolForYpu
+- Design Alloted: TooCoolForYou (https://www.figma.com/design/VENTLEjB1ekMDk7RgBQc74/TooCoolForYou--Copy-?m=auto&t=rybsU3RetfTMxSD5-6)
 - Deployment Link: https://ui2-code.vercel.app/
 - Backend Repo: https://github.com/lokesh-22/UI2CODE-Backend
 - Backend Deployment Link: ui2code-backend.onrender.com
