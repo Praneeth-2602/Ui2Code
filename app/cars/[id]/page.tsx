@@ -8,12 +8,6 @@ import img3 from '@/app/assets/swamp.png'
 import img4 from '@/app/assets/trice.png'
 import { useParams } from 'next/navigation'
 
-interface ProductPageProps {
-  params: {
-    id: string
-  }
-}
-
 function ProductPage() {
   const { id } = useParams();
 
