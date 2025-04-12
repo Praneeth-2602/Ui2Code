@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react'
 import ProductDetail from '@/app/components/product-detail'
 import img from '@/app/assets/mclaren.png'
