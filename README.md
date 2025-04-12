@@ -1,3 +1,10 @@
+##Details for Judgement
+- Team Name: NullS3ntin3l5
+- Design Alloted: TooCoolForYpu
+- Deployment Link: https://ui2-code.vercel.app/
+- Backend Repo: https://github.com/lokesh-22/UI2CODE-Backend
+- Backend Deployment Link: ui2code-backend.onrender.com
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
