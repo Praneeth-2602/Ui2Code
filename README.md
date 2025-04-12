@@ -1,4 +1,4 @@
-##Details for Judgement
+## Details for Judgement
 - Team Name: NullS3ntin3l5
 - Design Alloted: TooCoolForYpu
 - Deployment Link: https://ui2-code.vercel.app/
