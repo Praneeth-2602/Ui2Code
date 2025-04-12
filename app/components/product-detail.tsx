@@ -2,15 +2,16 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface ProductDetailProps {
+  id:string;
   name: string;
   description: string;
   price: number;
   imageSrc: string;
 }
 
-export default function ProductDetail({ name, description, price, imageSrc }: ProductDetailProps) {
+export default function ProductDetail({ id, name, description, price, imageSrc }: ProductDetailProps) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 p-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 p-6" id = {id}>
       
       {/* Left Section */}
       <div className="space-y-8">
